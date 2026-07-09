@@ -1,368 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaëtan Baylou-Lanot | Portfolio</title>
+    <title>Gaëtan Baylou-Lanot - Portfolio de Projets</title>
     <style>
+        /* Design épuré inspiré du thème Chirpy de Samuel Neumann */
         :root {
-            --bg-main: #0f172a;
-            --bg-sidebar: #1e293b;
-            --bg-card: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent: #38bdf8;
-            --accent-hover: #7dd3fc;
-            --border: #334155;
-            --code-bg: #0f172a;
+            --bg-color: #ffffff;
+            --text-color: #212529;
+            --sidebar-bg: #f8f9fa;
+            --sidebar-text: #495057;
+            --accent-color: #2a7ae2;
+            --code-bg: #f1f3f5;
+            --border-color: #dee2e6;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text-main);
-            background-color: var(--bg-main);
+            color: var(--text-color);
+            background-color: var(--bg-color);
             margin: 0;
             padding: 0;
             display: flex;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
-        /* Sidebar Navigation */
+        /* Barre latérale gauche */
         .sidebar {
-            width: 320px;
-            background-color: var(--bg-sidebar);
-            border-right: 1px solid var(--border);
+            width: 300px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid var(--border-color);
             height: 100vh;
             position: fixed;
             top: 0;
             left: 0;
             display: flex;
             flex-direction: column;
-            padding: 3rem 1.5rem;
+            padding: 2.5rem 1.2rem;
             box-sizing: border-box;
-            overflow-y: auto;
+            overflow-y: auto; /* Permet de scroller dans le menu si la liste est longue */
         }
 
         .profile {
             text-align: center;
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .profile-pic {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            width: 90px;
+            height: 90px;
+            background: #ced4da;
             border-radius: 50%;
-            margin: 0 auto 1.2rem auto;
+            margin: 0 auto 1rem auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.2rem;
-            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+            font-size: 2rem;
         }
 
         .profile h1 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin: 0;
-            font-weight: 700;
-            letter-spacing: -0.025em;
+            color: #1a1a1a;
+            line-height: 1.3;
         }
 
         .profile p {
             font-size: 0.85rem;
-            color: var(--text-muted);
+            color: #6c757d;
             margin: 0.5rem 0 0 0;
         }
 
         .nav-links {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 1rem 0 0 0;
         }
 
         .nav-links li {
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.3rem;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: var(--text-muted);
+            color: var(--sidebar-text);
             font-weight: 500;
             font-size: 0.9rem;
             display: block;
-            padding: 0.6rem 0.8rem;
-            border-radius: 8px;
-            transition: evils 0.2s ease;
+            padding: 0.5rem 0.7rem;
+            border-radius: 6px;
+            transition: all 0.2s;
         }
 
         .nav-links a:hover {
-            background-color: rgba(255, 255, 255, 0.05);
-            color: var(--accent);
+            background-color: #e9ecef;
+            color: var(--accent-color);
         }
 
-        /* Main Content Area */
+        /* Zone de contenu principale */
         .content {
-            margin-left: 320px;
-            padding: 4rem 5rem;
-            max-width: 900px;
+            margin-left: 300px;
+            padding: 3.5rem;
+            max-width: 850px;
             width: 100%;
             box-sizing: border-box;
         }
 
-        .header-section {
-            margin-bottom: 3.5rem;
+        .tag-container {
+            margin-bottom: 0.5rem;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            letter-spacing: -0.04em;
-            margin: 0 0 0.75rem 0;
-            background: linear-gradient(to right, #fff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .tag {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        h1 { 
+            font-size: 2.2rem; 
+            color: #1a1a1a;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.2;
         }
 
         .meta {
             font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* Project Cards */
-        .project-card {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
+            color: #6c757d;
             margin-bottom: 2.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
         }
 
-        .project-card h2 {
-            font-size: 1.4rem;
-            color: var(--text-main);
-            margin-top: 0;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        h2 { 
+            font-size: 1.5rem; 
+            color: #1a1a1a;
+            margin-top: 3rem; 
+            border-bottom: 1px solid #f1f3f5;
+            padding-bottom: 0.3rem;
         }
 
         p {
-            color: var(--text-muted);
-            margin: 0 0 1.25rem 0;
-            font-size: 0.95rem;
+            margin: 1rem 0;
+            color: #333;
         }
 
         ul {
-            padding-left: 1.25rem;
-            margin: 0 0 1.5rem 0;
-            color: var(--text-muted);
-            font-size: 0.95rem;
+            padding-left: 1.5rem;
         }
 
         li {
             margin-bottom: 0.5rem;
         }
 
-        /* Technology Badges */
-        .tag-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.2rem;
-        }
-
-        .tag {
-            background: rgba(56, 189, 248, 0.1);
-            color: var(--accent);
-            padding: 0.2rem 0.6rem;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .tag.personal {
-            background: rgba(168, 85, 247, 0.1);
-            color: #c084fc;
-        }
-
-        /* Code Block Styling */
+        /* Blocs de code */
         pre {
             background-color: var(--code-bg);
             padding: 1.2rem;
             border-radius: 8px;
             overflow-x: auto;
-            border: 1px solid var(--border);
-            margin: 1.5rem 0 0 0;
+            border: 1px solid var(--border-color);
+            margin: 1.5rem 0;
         }
 
         code {
-            font-family: "SFMono-Regular", Consolas, monospace;
-            font-size: 0.85rem;
-            color: #f43f5e;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9rem;
+            color: #d63384;
         }
 
         pre code {
-            color: #e2e8f0;
+            color: #212529;
         }
 
         blockquote {
-            border-left: 4px solid var(--accent);
+            border-left: 4px solid var(--accent-color);
             margin: 1.5rem 0;
             padding: 0.5rem 1rem;
-            background-color: rgba(56, 189, 248, 0.03);
-            color: var(--text-muted);
-            border-radius: 0 8px 8px 0;
+            background-color: #f8f9fa;
+            color: #495057;
         }
 
-        /* Responsive Layout */
-        @media (max-width: 992px) {
+        /* Mode Mobile Responsif */
+        @media (max-width: 768px) {
             body { flex-direction: column; }
-            .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border); padding: 2rem 1.5rem; }
-            .content { margin-left: 0; padding: 2rem 1.5rem; }
+            .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border-color); padding: 1.5rem; }
+            .content { margin-left: 0; padding: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- SIDEBAR NAVIGATION -->
+    <!-- BARRE LATÉRALE (SIDEBAR) -->
     <div class="sidebar">
         <div class="profile">
-            <div class="profile-pic">🤖</div>
+            <div class="profile-pic">🚀</div>
             <h1>Gaëtan Baylou-Lanot</h1>
-            <p>Robotics & AI Engineer Portfolio</p>
+            <p>Mon Portfolio de Projets</p>
         </div>
         <ul class="nav-links">
-            <li><a href="#about">📌 About & Internships</a></li>
-            <li><a href="#ros2-control">🔌 Robot Control (ROS2)</a></li>
-            <li><a href="#ia-rl">🤖 Robot Guidance (RL)</a></li>
-            <li><a href="#cpp-club">⚙️ Robotics Club (C++)</a></li>
-            <li><a href="#ia-ml">🧠 Supervised Learning</a></li>
+            <li><a href="#introduction">📌 Introduction</a></li>
             <li><a href="#van-conversion">🚐 Van Conversion</a></li>
+            <li><a href="#code-project-1">⚙️ Code Projet n°1 (C++)</a></li>
+            <li><a href="#code-project-2">🔌 Code Project n°2 (ROS2)</a></li>
+            <li><a href="#ia-project-1">🧠 IA Project n°1 (ML)</a></li>
+            <li><a href="#ia-project-2">🤖 IA Project n°2 (RL)</a></li>
+            <li><a href="#my studies">🎓 My Studies: 3 Internships</a></li>
         </ul>
     </div>
 
-    <!-- MAIN CONTENT -->
+    <!-- CONTENU PRINCIPAL -->
     <div class="content">
-        
-        <div class="header-section">
-            <h1>Engineering Portfolio</h1>
-            <div class="meta">Last updated: 2026 • By Gaëtan Baylou-Lanot</div>
-            <blockquote>
-                Welcome to my project showcase. This documentation technical page deeper dives into the architecture, codebase, and methodologies of my main engineering projects.
-            </blockquote>
+        <div class="tag-container">
+            <span class="tag">robotics</span>
+            <span class="tag">ai</span>
+            <span class="tag">embedded</span>
+            <span class="tag">engineering</span>
         </div>
+        
+        <h1>Détail de mes projets personnels & académiques</h1>
+        <div class="meta">Mis à jour en 2026 • Par Gaëtan Baylou-Lanot</div>
 
-        <!-- SECTION 1: ABOUT & INTERNSHIPS -->
-        <section id="about" class="project-card">
-            <h2>📌 My Study: 3 Internships</h2>
-            <p>A quick chronological overview of my professional experiences in the industry, linking academic knowledge to concrete engineering solutions.</p>
+        <!-- Section Introduction -->
+        <section id="introduction">
+            <h2>📌 Introduction</h2>
+            <p>Bienvenue sur mon espace personnel de documentation. Ce site regroupe les différents projets sur lesquels j'ai travaillé, touchant à la fois à l'intelligence artificielle, au développement système, à la robotique et à des réalisations concrètes de conception.</p>
+            <blockquote>
+                <strong>Note aux recruteurs :</strong> Cette page me permet de détailler les aspects techniques et méthodologiques qui ne tiennent pas sur mon format de CV classique.
+            </blockquote>
+        </section>
+
+        <!-- Section 1 : Van Conversion -->
+        <section id="van-conversion">
+            <h2>🚐 Van conversion: bref summary of my personality</h2>
+            <p>[Décrivez ici brièvement votre projet d'aménagement de van. C'est une excellente façon de montrer votre autonomie, vos compétences en gestion de projet, en résolution de problèmes et en ingénierie concrète/bricolage].</p>
             <ul>
-                <li><strong>Internship 3 (Latest):</strong> [Company Name] — Working on [Main Topic/Technology]. Deep dive into production-ready software engineering.</li>
-                <li><strong>Internship 2:</strong> [Company Name] — Focused on [Main Topic/Technology]. Developing core components and system integration.</li>
-                <li><strong>Internship 1:</strong> [Company Name] — Initial industry experience dealing with [Main Topic/Technology].</li>
+                <li>Conception des plans en 3D et optimisation de l'espace.</li>
+                <li>Gestion du système électrique autonome (batteries, panneaux solaires).</li>
+                <li>Choix des matériaux et isolation thermique.</li>
             </ul>
         </section>
 
-        <!-- SECTION 2: ROS2 -->
-        <section id="ros2-control" class="project-card">
-            <h2>🔌 Code project n°2: robot control with ROS2</h2>
-            <div class="tag-container">
-                <span class="tag">ROS2</span>
-                <span class="tag">C++ / Python</span>
-                <span class="tag">Linux</span>
-            </div>
-            <p>Implementation of an advanced middleware control architecture using Robot Operating System 2 to drive autonomous mobile units.</p>
-            <ul>
-                <li>Designed custom ROS2 Nodes with optimized publisher/subscriber patterns.</li>
-                <li>Handled real-time sensor fusion (LiDAR, Odometry, IMU) for navigation mapping.</li>
-                <li>Managed lifecycle nodes and custom services for robust fail-safe states.</li>
-            </ul>
-        </section>
-
-        <!-- SECTION 3: RL -->
-        <section id="ia-rl" class="project-card">
-            <h2>🤖 IA project n°2: simulation and guidance of robot by RL</h2>
-            <div class="tag-container">
-                <span class="tag">Reinforcement Learning</span>
-                <span class="tag">Python</span>
-                <span class="tag">Gym/Gazebo</span>
-            </div>
-            <p>Developing a deep reinforcement learning pipeline allowing a simulated agent to safely navigate complex environments.</p>
-            <ul>
-                <li>Created custom simulation environments using Gym wrappers and physics engines.</li>
-                <li>Designed and fine-tuned reward functions to prevent collisions while maximizing velocity.</li>
-                <li>Evaluated policy gradient methods (PPO, DDPG) regarding training convergence times.</li>
-            </ul>
-        </section>
-
-        <!-- SECTION 4: C++ CLUB -->
-        <section id="cpp-club" class="project-card">
+        <!-- Section 3 : Code Projet n°1 -->
+        <section id="code-project-1">
             <h2>⚙️ Code projet n°1: robotics' club in C++</h2>
-            <div class="tag-container">
-                <span class="tag">C++17</span>
-                <span class="tag">Embedded Systems</span>
-                <span class="tag">Git</span>
-            </div>
-            <p>Core software development for the competitive team at the robotics club, building modular firmware from scratch.</p>
+            <p>[Détaillez ici votre contribution au club de robotique, notamment la partie développement bas niveau / système en C++].</p>
             <ul>
-                <li>Wrote clean, object-oriented C++ code for low-level microcontrollers and motor drivers.</li>
-                <li>Implemented precise interrupt-driven sensor polling routines.</li>
-                <li>Maintained repository structure and continuous integration using Git workflows.</li>
+                <li>Développement orienté objet en C++ pour la gestion des actuateurs et capteurs.</li>
+                <li>Optimisation du code pour des architectures embarquées à ressources limitées.</li>
+                <li>Travail collaboratif en équipe via Git et méthodologie Agile.</li>
             </ul>
         </section>
 
-        <!-- SECTION 5: ML SUPERVISED -->
-        <section id="ia-ml" class="project-card">
-            <h2>🧠 IA project n°1: deployment of a supervised learning of food</h2>
-            <div class="tag-container">
-                <span class="tag">Computer Vision</span>
-                <span class="tag">TensorFlow</span>
-                <span class="tag">Deep Learning</span>
-            </div>
-            <p>End-to-end computer vision project focused on dataset processing, model training, and embedded deployment for real-time food classification.</p>
+        <!-- Section 4 : Code Project n°2 -->
+        <section id="code-project-2">
+            <h2>🔌 Code project n°2: robot control with ROS2</h2>
+            <p>[Présentez ici vos compétences sur ROS2 (Robot Operating System), l'outil standard de l'industrie robotique].</p>
             <ul>
-                <li>Curated, cleaned, and augmented an image dataset to resolve class imbalance.</li>
-                <li>Trained a Convolutional Neural Network (CNN) achieving high accuracy metrics.</li>
+                <li>Création de nœuds (Nodes) ROS2 personnalisés en Python ou C++.</li>
+                <li>Gestion des communications via les Topics, Services et Actions.</li>
+                <li>Intégration et manipulation de données de capteurs (LiDAR, Caméra Odométrie).</li>
             </ul>
+        </section>
+
+        <!-- Section 5 : IA Project n°1 -->
+        <section id="ia-project-1">
+            <h2>🧠 IA project n°1: deployment of a supervised learning of food</h2>
+            <p>[Présentez votre projet d'apprentissage supervisé dédié à la reconnaissance ou classification de nourriture].</p>
+            <p>Voici un aperçu de l'architecture ou du pipeline de traitement utilisé pour ce modèle :</p>
+            
 <pre><code>import tensorflow as tf
 from tensorflow.keras import layers, models
 
-def build_vision_pipeline(input_shape, num_classes):
-    """ Convolutional neural network structure for embedded classification """
+def create_food_model(input_shape, num_classes):
+    """ Création d'un réseau de neurones convolutif (CNN) pour la classification """
     model = models.Sequential([
         layers.Conv2D(32, (3, 3), activation='relu', input_shape=input_shape),
         layers.MaxPooling2D((2, 2)),
         layers.Conv2D(64, (3, 3), activation='relu'),
+        layers.MaxPooling2D((2, 2)),
         layers.Flatten(),
+        layers.Dense(64, activation='relu'),
         layers.Dense(num_classes, activation='softmax')
     ])
     return model
 
-print("Vision pipeline structure successfully compiled.")</code></pre>
+print("Structure de l'algorithme d'apprentissage supervisé initialisée.")
+</code></pre>
         </section>
 
-        <!-- SECTION 6: VAN CONVERSION -->
-        <section id="van-conversion" class="project-card">
-            <h2>🚐 Van conversion: bref summary of my personality</h2>
-            <div class="tag-container">
-                <span class="tag personal">Personal Project</span>
-                <span class="tag personal">Project Management</span>
-                <span class="tag personal">Engineering</span>
-            </div>
-            <p>Aside from pure software engineering, I spent months designing and building a completely autonomous off-grid campervan. This project highlights my practical problem-solving skills and hardware resourcefulness.</p>
+        <!-- Section 2 : IA Project n°2 -->
+        <section id="ia-project-2">
+            <h2>🤖 IA project n°2: simulation and guidance of robot by RL</h2>
+            <p>[Expliquez ici votre projet d'apprentissage par renforcement (Reinforcement Learning - RL) appliqué au guidage d'un robot en simulation].</p>
             <ul>
-                <li>Calculated and engineered a 12V solar electrical grid system with lithium battery storage.</li>
-                <li>Created 3D CAD mockups for mechanical and spacing optimization.</li>
-                <li>Demonstrated high resilience, adaptability, and budget management skills throughout the build.</li>
+                <li>Définition de l'environnement de simulation (ex: OpenAI Gym, Webots, ou Gazebo).</li>
+                <li>Modélisation de la fonction de récompense (reward function) pour l'évitement d'obstacles.</li>
+                <li>Algorithmes testés : PPO, DQN ou DDPG.</li>
             </ul>
         </section>
 
+        <!-- Section 6 :  Stages -->
+        <section id="my studies">
+            <h2>🎓 My studies: 3 internships</h2>
+            <p>[Utilisez cette conclusion pour lier vos projets personnels avec vos expériences professionnelles de stage et votre parcours d'études].</p>
+            <ul>
+                <li><strong>Stage n°1 :</strong> [Intitulé du poste / Entreprise] — Focus sur [Techno clé].</li>
+                <li><strong>Stage n°2 :</strong> [Intitulé du poste / Entreprise] — Focus sur [Techno clé].</li>
+                <li><strong>Stage n°3 :</strong> [Intitulé du poste / Entreprise] — Focus sur [Techno clé].</li>
+            </ul>
+        </section>
     </div>
 
 </body>
