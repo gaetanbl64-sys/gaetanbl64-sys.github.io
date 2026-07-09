@@ -14,9 +14,9 @@
             --heading-color: #1c1f23;
             --sidebar-bg: #fbfbfb;
             --sidebar-text: #5c6266;
-            --accent-color: #007bff; /* Bleu Chirpy prompt */
+            --accent-color: #007bff;
             --accent-bg-light: #e3f2fd;
-            --code-bg: #1e1e1e; /* Code bloc en mode sombre pour le contraste pro */
+            --code-bg: #1e1e1e;
             --code-text: #f8f8f2;
             --border-color: #eaeaea;
             --tag-bg: #eff1f3;
@@ -29,14 +29,13 @@
             background-color: var(--bg-color);
             margin: 0;
             padding: 0;
-            display: flex;
-            line-height: 1.7;
+            /* Flex supprimé ici pour bloquer la structure proprement */
             -webkit-font-smoothing: antialiased;
         }
 
-        /* BARRE LATÉRALE GAUCHE (PREMIUM & CLEAN) */
+        /* BARRE LATÉRALE GAUCHE */
         .sidebar {
-            width: 280px;
+            width: 260px; /* Légèrement plus fine pour gagner de l'espace */
             background-color: var(--sidebar-bg);
             border-right: 1px solid var(--border-color);
             height: 100vh;
@@ -46,8 +45,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 3rem 1.5rem 1.5rem 2rem;
+            padding: 3rem 1.5rem 1.5rem 1.5rem;
             box-sizing: border-box;
+            z-index: 100;
         }
 
         .sidebar-top {
@@ -117,7 +117,6 @@
             color: var(--heading-color);
         }
 
-        /* Icons footer style Chirpy */
         .sidebar-footer {
             display: flex;
             gap: 15px;
@@ -133,13 +132,12 @@
         }
         .sidebar-footer a:hover { color: var(--heading-color); }
 
-        /* ZONE DE CONTENU PRINCIPALE */
+        /* ZONE DE CONTENU PRINCIPALE (CORRIGÉE) */
         .content {
-        margin-left: 280px; /* Aligné pile sur la largeur de la sidebar */
-        padding: 3rem 2.5rem 3rem 2.5rem; /* Équilibre parfait : 2.5rem à gauche au lieu de 4.5rem */
-        max-width: 800px;
-        width: calc(100% - 280px); /* Force le contenu à occuper le reste exact de l'écran */
-        box-sizing: border-box;
+            margin-left: 260px; /* Colle pile au 260px de la sidebar */
+            padding: 3rem 2rem 3rem 1.5rem; /* 1.5rem à gauche = le texte est juste à côté de la ligne */
+            max-width: 800px; /* Limite la largeur de lecture pour le style Chirpy */
+            box-sizing: border-box;
         }
 
         /* Tags discrets style Chirpy */
@@ -233,7 +231,7 @@
             line-height: 1;
         }
 
-        /* BLOCS DE CODE STYLE IDE SOMBRE (PLUS PRO) */
+        /* BLOCS DE CODE STYLE IDE SOMBRE */
         pre {
             background-color: var(--code-bg);
             padding: 1.25rem;
@@ -261,7 +259,6 @@
 
         /* ASSURANCE QUALITÉ RESPONSIVE */
         @media (max-width: 850px) {
-            body { flex-direction: column; }
             .sidebar { width: 100%; height: auto; position: relative; padding: 2rem 1.5rem; border-right: none; border-bottom: 1px solid var(--border-color); }
             .content { margin-left: 0; padding: 2.5rem 1.5rem; }
         }
