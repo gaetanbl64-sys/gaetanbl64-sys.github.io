@@ -289,177 +289,130 @@
             <ul class="nav-links">
                 <li><a href="#introduction">📌 Introduction</a></li>
                 <li><a href="#van-conversion">🚐 Van Conversion</a></li>
-                <li><a href="#my-internships">🎓 My Internships & Experience</a></li>
+                <li><a href="#gma-internships">🎓 GMA Internships</a></li>
                 <li><a href="#ins-aerien">✈️ Association INS'Aérien</a></li>
                 <li><a href="#code-project-1">⚙️ Code Project n°1 (C++)</a></li>
-                <li><a href="#code-project-2">🔌 Code Project n°2 (MATLAB)</a></li>
-                <li><a href="#ia-project-1">🧠 AI Project n°1 (PPO & RL)</a></li>
-                <li><a href="#volunteering">🤝 Leadership & Volunteering</a></li>
+                <li><a href="#code-project-2">🔌 Code Project n°2 (ROS2)</a></li>
+                <li><a href="#ia-project-1">🧠 AI Project n°1 (ML)</a></li>
+                <li><a href="#ia-project-2">🤖 AI Project n°2 (RL)</a></li>
             </ul>
         </div>
         
         <div class="sidebar-footer">
             <a href="https://www.linkedin.com/in/gaetan-baylou-lanot-72931b177/" target="_blank" title="LinkedIn">🔗</a>
             <a href="mailto:Gaetan.baylou--lanot@insa-rennes.fr" title="Mail">✉️</a>
-            <a href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" title="CV / Portfolio Link">📄</a>
+            <a href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" title="CV Link">📄</a>
         </div>
     </div>
 
     <!-- MAIN CONTENT AREA -->
     <div class="content">
         <div class="tag-container">
+            <span class="tag">mechanical-engineering</span>
+            <span class="tag">control-systems</span>
             <span class="tag">robotics</span>
-            <span class="tag">reinforcement-learning</span>
-            <span class="tag">control-engineering</span>
-            <span class="tag">3d-printing</span>
-            <span class="tag">embedded-systems</span>
+            <span class="tag">automation</span>
         </div>
         
-        <h1 class="main-title">Engineering Track & Technical Portfolio</h1>
+        <h1 class="main-title">Academic Tracks & Technical Engineering Projects</h1>
         <div class="meta">
             <span>Current Year: 2026</span>
             <span>•</span>
-            <span>Rennes, Bretagne, France</span>
+            <span>By Gaëtan Baylou-Lanot</span>
         </div>
 
         <section id="introduction">
             <h2>📌 Introduction</h2>
-            <p>I am a passionate, curious, and versatile engineering student specializing in <strong>Mechanical and Control Engineering (GMA)</strong> at <strong>INSA Rennes</strong>[cite: 1]. My core technical drivers lie at the intersection of outdoor sports, robotics, and complex automated control architectures[cite: 1]. I am currently actively seeking a challenging 4 to 5-month final-year internship in AI and robotics starting in March[cite: 1].</p>
+            <p>Welcome to my personal project documentation environment. As a Mechanical and Control Engineering (GMA) student at INSA Rennes, this space serves to highlight my practical execution of control loops, structural modeling, and robotic integrations.</p>
             
             <blockquote class="prompt-info">
-                <span>As documented in my official resume profile, I have a proven track record of managing technical timelines under high pressure, highlighted by competing in international robotics leagues[cite: 1].</span>
+                <span><strong>Looking for a final-year internship:</strong> Seeking a 4 to 5-month placement starting March 2027 focusing on AI and Robotics workflows. Refer to "My CV.eng.pdf" or my live Canva link for summary details.</span>
             </blockquote>
         </section>
 
-        <!-- VAN CONVERSION SECTION -->
+        <!-- VAN CONVERSION SECTION (LEFT EMPTY) -->
         <section id="van-conversion">
             <h2>🚐 Van conversion: A brief summary of my personality</h2>
-            <p>Converting a van from scratch serves as a concrete manifestation of my engineering mindset outside the classroom. It outlines my resourcefulness, structural optimization skills, and capability to transition raw blueprints into robust physical installations.</p>
-            
-            <!-- Replace src with your local photo path (e.g., images/my_van.jpg) -->
-            <img class="project-img" src="https://images.unsplash.com/photo-1527786356257-b271241f2f8a?auto=format&fit=crop&w=800&q=80" alt="Van Conversion Framework">
-
-            <ul>
-                <li><strong>Spatial Design:</strong> Drafted comprehensive 3D system assemblies to maximize volumetric efficiency within compact tolerances.</li>
-                <li><strong>Embedded Infrastructure:</strong> Formulated off-grid electrical wire harnesses coupled with automated safety breakers and solar charger controls.</li>
-                <li><strong>Material Science:</strong> Researched composite and layered insulation thermal profiles to handle unpredictable outdoor environments.</li>
-            </ul>
+            <!-- Left empty as requested -->
+            <p></p>
+            <img class="project-img" src="images/van-project.jpg" alt="[Insert your Van photo here]">
         </section>
 
-        <!-- MOVED & ENRICHED INTERNSHIPS SECTION -->
-        <section id="my-internships">
-            <h2>🎓 My Internships & Experience</h2>
-            <p>Through my academic progression at INSA Rennes (2022 – 2027), I have consolidated theoretical system controls with structural, additive, and autonomous R&D placements across industrial domains[cite: 1]:</p>
+        <!-- GMA INTERNSHIPS (MOVED HERE & UPDATED WITH REAL EXP) -->
+        <section id="gma-internships">
+            <h2>🎓 Mechanical & Control Engineering (GMA) Track: 3 Core Internships</h2>
+            <p>To explicitly illustrate my validation of GMA principles (materials science, prototyping, CAD, and robot kinematics), these three industrial experiences highlight my progression:</p>
             
+            <img class="project-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Industrial Engineering">
+
             <ul>
                 <li>
-                    <strong>Scalian (June 2026 - Present) | AI Implementation Internship:</strong> 
-                    Currently modelling and optimizing a ‘Duckiebot’ robot inside simulation environments to train, improve, and evaluate advanced reinforcement learning algorithms, specifically focusing on Proximal Policy Optimization (PPO)[cite: 1]. My responsibilities include granular adjustments of hyperparameter baselines and structural reward functions to safely transition training policies into physical robot guidance[cite: 1].
+                    <strong>XSun — Structural Engineering Placement (3 months):</strong> 
+                    Contributed to the conceptual study of lightweight, optimized composite materials. Handled the 3D modeling and precision technical drawing of the structural layout for a new autonomous solar-powered VTOL drone model using advanced CAD packages.
                 </li>
                 <li>
-                    <strong>XSun (June 2025 - August 2025) | Structural Engineer Internship:</strong> 
-                    Conducted conceptual studies regarding specialized lightweight structural materials, 3D parametric solid modelling, and complex technical drawings for the structural frame of a next-generation solar-powered VTOL drone model[cite: 1].
+                    <strong>Decathlon France — 3D Printing & Materials Technician at ADDLAB (2 months):</strong> 
+                    Supervised the resin 3D printing production line from software parameterization to physical finishing. Ran an internal R&D project validating a brand-new material matrix for Selective Laser Sintering (SLS). Contributed directly to futuristic rapid prototyping jobs, including custom bicycle frames and bespoke aerospace component concepts for the ESA.
                 </li>
                 <li>
-                    <strong>Decathlon France (July 2023 - August 2023) | 3D Technical Specialist:</strong> 
-                    Operated within Decathlon's flagship ADDLAB laboratory facility[cite: 1]. Oversaw precision resin 3D printing workflows from software parameterization to physical finishing treatments, and executed core R&D testing pipelines to validate a new experimental compound for Selective Laser Sintering (SLS)[cite: 1]. Collaborated on frontier projects including prototype carbon-bicycle frames and bespoke component designs destined for the European Space Agency (ESA)[cite: 1].
-                </li>
-                <li>
-                    <strong>Safran / Metallicadour (April 2019) | Robotic Arm R&D Placement:</strong> 
-                    Embedded within the Metallicadour laboratory facility to shadow advanced research targeting automated aerospace workflows utilizing industrial KUKA robotic arms[cite: 1].
-                </li>
-                <li>
-                    <strong>Private Academic Tutor (November 2024 - April 2025):</strong> 
-                    Provided targeted, high-level Mathematics and Physics instruction to final-year high school students in Rennes, clarifying complex theoretical models[cite: 1].
+                    <strong>Safran / Metallicadour — Robotic Arm Integration (1 month + Academic Continuation):</strong> 
+                    Shadowed specialized research engineers deploying industrial automated solutions utilizing a high-payload KUKA robotic arm within the aerospace manufacturing ecosystem. 
+                    <br><em>GMA Academic Link:</em> Leveraging this exposure, I successfully applied complex theoretical kinematics during my 4th year at INSA Rennes by completely rewriting the mathematical control software for a Stäubli SCARA robot in MATLAB, which we successfully validated through experimental physical lab tests.
                 </li>
             </ul>
         </section>
 
         <!-- INS'AERIEN ASSOCIATION SECTION -->
         <section id="ins-aerien">
-            <h2>✈️ President & Founder of the INS'Aérien Association</h2>
-            <p>From September 2023 to December 2025, I spearheaded the creation and structural organization of INS'Aérien, a high-performance FPV drone club[cite: 1]. This initiative allowed me to combine complex hardware assemblies with creative video direction[cite: 1].</p>
+            <h2>✈️ President of the INS'Aérien Association</h2>
+            <p>Founded and managed an open-access FPV drone club at INSA Rennes, creating a complete environment to bridge high-speed custom hardware assembly with physical deployment cycles.</p>
 
-            <img class="project-img" src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80" alt="Custom Built FPV Drone">
+            <img class="project-img" src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=800&q=80" alt="FPV Drone Testing">
 
             <ul>
-                <li><strong>Hardware Engineering:</strong> Hand-built custom FPV drone configurations capable of extreme acceleration profiles, launching from 0 to 100 km/h in 2.2 seconds[cite: 1].</li>
-                <li><strong>Operational Scale:</strong> Managed a dedicated crew of nine active members, successfully building three bespoke drone units from the ground up[cite: 1].</li>
-                <li><strong>Production Delivery:</strong> Offered technical aerial cinematography services for commercial festivals and music videos, outputting more than 20 professional video clips using Adobe Premiere and Lightroom[cite: 1].</li>
-                <li><strong>Executive Leadership:</strong> Gained extensive leadership insight regarding financial budgeting, administrative safety compliance, and inter-team communications[cite: 1].</li>
+                <li><strong>Hardware Performance:</strong> Built customized FPV drones entirely from scratch capable of accelerating from 0 to 100 km/h in 2.2 seconds.</li>
+                <li><strong>Operations Scale:</strong> Expanded the organization to include 9 active internal members, successfully building 3 functional drones and producing over 20 video clips and festival captures.</li>
+                <li><strong>Leadership Value:</strong> Developed professional competence in budget management, corporate communications (further developed as Communications Manager for the GMA Corporate White Week), and team cross-collaboration under dynamic schedules.</li>
             </ul>
         </section>
 
         <!-- CODE PROJECT 1 -->
         <section id="code-project-1">
-            <h2>⚙️ Code Project n°1: Embedded Software in the French Robotics Cup</h2>
-            <p>In May 2026, I participated in the prestigious French Robotics Cup (Senior Category) as part of the INSA Rennes Robotics Club, securing a highly competitive 42nd place out of 121 teams[cite: 1].</p>
+            <h2>⚙️ Code Project n°1: Robotics Club inside the French Robotics Cup</h2>
+            <p>Embedded systems programming and algorithmic coordination within the INSA Rennes school robotics club.</p>
             <ul>
-                <li><strong>Version Control:</strong> Implemented strict GitHub branching pipelines to merge real-time sensory node updates cleanly across a distributed multi-developer team[cite: 1].</li>
-                <li><strong>Language Standard:</strong> Developed low-latency embedded algorithmic modules written entirely in C++ to achieve deterministic reactions during matches[cite: 1].</li>
-                <li><strong>System Agility:</strong> Managed mission-critical software scripts under intense on-site pressure and tight scheduling blocks[cite: 1].</li>
+                <li><strong>Competition Testing:</strong> Deployed and tested competitive routines in high-stress settings during the French Robotics Cup (Senior Category), achieving a strong 42nd place finish out of 121 teams nationwide.</li>
+                <li><strong>Low-level Architecture:</strong> Developed object-oriented structures in C++ integrated with Git version control to ensure responsive sensor reading and precise trajectory execution.</li>
+                <li><strong>Legacy:</strong> Built on top of my foundational background as a 2021 RoboCup Junior World Champion in Bangkok, Thailand, emphasizing robust coordination and performance under strict competition timelines.</li>
             </ul>
         </section>
 
-        <!-- CODE PROJECT 2 -->
+        <!-- CODE PROJECT 2 (LEFT EMPTY) -->
         <section id="code-project-2">
-            <h2>🔌 Code Project n°2: SCARA Robot Control Software rewrite</h2>
-            <p>Building upon the theoretical foundations acquired during my fourth academic year in 2026, I coupled mathematical modeling with hardware verification by targeting high-speed pick-and-place robots[cite: 1].</p>
-
-            <img class="project-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" alt="Industrial Robotic Testing">
-
-            <ul>
-                <li><strong>Mathematical Modeling:</strong> Completely rewrote the theoretical control and inverse kinematics software matrix for an industrial Stäubli SCARA robot using MATLAB[cite: 1].</li>
-                <li><strong>Experimental Validation:</strong> Executed live physical loop testing on hardware, validating that the software script perfectly matched real-world trajectory profiles without boundary errors[cite: 1].</li>
-                <li><strong>Toolchain Familiarity:</strong> Extended this robotics focus into self-taught system tools including ROS2, Docker containerization, and PyTorch deep-learning networks[cite: 1].</li>
-            </ul>
+            <h2>🔌 Code Project n°2: Robot Control with ROS2</h2>
+            <!-- Left empty as requested -->
+            <p></p>
+            <img class="project-img" src="images/ros2-project.jpg" alt="[Insert your ROS2 map/nodes photo here]">
         </section>
 
-        <!-- AI PROJECT 1 -->
+        <!-- AI PROJECT 1 (LEFT EMPTY) -->
         <section id="ia-project-1">
-            <h2>🧠 AI Project n°1: Neural Network Implementations for Autonomous Agents</h2>
-            <p>My R&D work involves building reliable training configurations where neural policies can safely interact with simulated rigid-body physics engines before deployment.</p>
-            <p>Below is a structural example of the policy network architectures utilized during my robotic reinforcement learning configurations inside NVIDIA Isaac Sim/Lab[cite: 1]:</p>
-            
-<pre><code>import torch
-import torch.nn as nn
-
-class RobotPolicyNetwork(nn.Module):
-    """ Actor-Critic PPO network architecture for Duckiebot agent tracking """
-    def __init__(self, state_dim, action_dim):
-        super(RobotPolicyNetwork, self).__init__()
-        self.actor = nn.Sequential(
-            nn.Linear(state_dim, 128),
-            nn.ReLU(),
-            nn.Linear(128, 128),
-            nn.ReLU(),
-            nn.Linear(128, action_dim),
-            nn.Tanh() # Continuous velocity outputs [-1, 1]
-        )
-        self.critic = nn.Sequential(
-            nn.Linear(state_dim, 128),
-            nn.ReLU(),
-            nn.Linear(128, 64),
-            nn.ReLU(),
-            nn.Linear(64, 1)
-        )
-
-    def forward(self, state):
-        value = self.critic(state)
-        action_mean = self.actor(state)
-        return action_mean, value
-
-print("PPO Actor-Critic tracking structure initialized.")
-</code></pre>
+            <h2>🧠 AI Project n°1: Supervised Learning Pipeline</h2>
+            <!-- Left empty as requested -->
+            <p></p>
         </section>
 
-        <!-- VOLUNTEERING SECTION -->
-        <section id="volunteering">
-            <h2>🤝 Leadership & Volunteering Highlights</h2>
-            <p>Outside of pure code development, I actively invest energy into organizing academic events and testing my skills in global engineering ecosystems:</p>
+        <!-- AI PROJECT 2 -->
+        <section id="ia-project-2">
+            <h2>🤖 AI Project n°2: Simulation and Guidance of Autonomous Robots by Reinforcement Learning</h2>
+            <p>Direct implementation and training of end-to-end learning agents inside next-generation physical simulators.</p>
+
+            <img class="project-img" src="https://images.unsplash.com/photo-1617791160505-6f006e121980?auto=format&fit=crop&w=800&q=80" alt="Neural Network Simulation">
+
             <ul>
-                <li><strong>Corporate Communications Manager - Semaine Blanche GMA (Oct 2024 - Feb 2026):</strong> Co-organized a major corporate network tour for our entire engineering year group[cite: 1]. Managed funding campaigns and established corporate relations to secure site visits across 11 key technology facilities, including the CEA Tech laboratories in the Pays de la Loire region[cite: 1].</li>
-                <li><strong>World Champion (Junior Category) - RoboCup (July 2021):</strong> Attained the ultimate global standing as Robotics World Champion at the international competition in Bangkok after a rigorous 2-year development cycle with the ElektronLibres public robotics club[cite: 1]. Proved an elite capability to work under immense pressure within collaborative English-speaking teams[cite: 1].</li>
+                <li><strong>Scalian Deployment:</strong> Modeled a physical 'Duckiebot' robot platform in simulation environments to train, evaluate, and scale deep reinforcement learning loops.</li>
+                <li><strong>Algorithmic Fine-Tuning:</strong> Adjusted learning hyper-parameters and reward algorithms using Proximal Policy Optimization (PPO) variants inside PyTorch to achieve reliable guidance behavior.</li>
+                <li><strong>Physical Target:</strong> Designed optimal reward metrics to transfer trained policies successfully into clean autonomous navigation behaviors on real embedded platforms.</li>
             </ul>
         </section>
     </div>
