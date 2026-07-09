@@ -12,13 +12,13 @@
             --bg-color: #ffffff;
             --text-color: #343a40;
             --heading-color: #1c1f23;
-            --sidebar-bg: #fbfbfb;
-            --sidebar-text: #5c6266;
+            --sidebar-bg: #f4f6f8; /* Gris Chirpy discret mais distinct pour casser le "vide" */
+            --sidebar-text: #495057;
             --accent-color: #007bff;
             --accent-bg-light: #e3f2fd;
             --code-bg: #1e1e1e;
             --code-text: #f8f8f2;
-            --border-color: #eaeaea;
+            --border-color: #dbdfe2; /* Bordure nette pour marquer la fin de la sidebar */
             --tag-bg: #eff1f3;
             --tag-text: #6c757d;
         }
@@ -29,13 +29,12 @@
             background-color: var(--bg-color);
             margin: 0;
             padding: 0;
-            /* Flex supprimé ici pour bloquer la structure proprement */
             -webkit-font-smoothing: antialiased;
         }
 
-        /* BARRE LATÉRALE GAUCHE */
+        /* BARRE LATÉRALE GAUCHE (OPTIMISÉE & SERRÉE) */
         .sidebar {
-            width: 260px; /* Légèrement plus fine pour gagner de l'espace */
+            width: 240px; /* Plus compacte pour maximiser l'espace de lecture */
             background-color: var(--sidebar-bg);
             border-right: 1px solid var(--border-color);
             height: 100vh;
@@ -45,7 +44,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 3rem 1.5rem 1.5rem 1.5rem;
+            padding: 3rem 1.2rem 1.5rem 1.2rem;
             box-sizing: border-box;
             z-index: 100;
         }
@@ -62,20 +61,20 @@
         }
 
         .profile-pic {
-            width: 75px;
-            height: 75px;
+            width: 70px;
+            height: 70px;
             background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.2rem;
-            margin-bottom: 1.2rem;
+            font-size: 2rem;
+            margin-bottom: 1rem;
             box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .profile h1 {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             font-weight: 700;
             margin: 0;
             color: var(--heading-color);
@@ -83,7 +82,7 @@
         }
 
         .profile p {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #868e96;
             margin: 0.3rem 0 0 0;
             font-weight: 400;
@@ -103,24 +102,24 @@
             text-decoration: none;
             color: var(--sidebar-text);
             font-weight: 500;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            gap: 10px;
-            padding: 0.55rem 0.7rem;
+            gap: 8px;
+            padding: 0.5rem 0.6rem;
             border-radius: 6px;
             transition: all 0.15s ease-in-out;
         }
 
         .nav-links a:hover {
-            background-color: #f1f3f5;
+            background-color: #e9ecef;
             color: var(--heading-color);
         }
 
         .sidebar-footer {
             display: flex;
             gap: 15px;
-            padding-left: 0.7rem;
+            padding-left: 0.6rem;
             font-size: 0.9rem;
             color: #adb5bd;
         }
@@ -132,11 +131,11 @@
         }
         .sidebar-footer a:hover { color: var(--heading-color); }
 
-        /* ZONE DE CONTENU PRINCIPALE (CORRIGÉE) */
+        /* ZONE DE CONTENU PRINCIPALE (RECOLLÉE A LA BORDURE) */
         .content {
-            margin-left: 260px; /* Colle pile au 260px de la sidebar */
-            padding: 3rem 2rem 3rem 1.5rem; /* 1.5rem à gauche = le texte est juste à côté de la ligne */
-            max-width: 800px; /* Limite la largeur de lecture pour le style Chirpy */
+            margin-left: 240px; /* Aligné au pixel près sur la nouvelle largeur */
+            padding: 3rem 2.5rem 3rem 1.5rem; /* Espace minimaliste et propre à gauche (1.5rem) */
+            max-width: 800px;
             box-sizing: border-box;
         }
 
@@ -164,7 +163,7 @@
         }
 
         h1.main-title { 
-            font-size: 2.4rem; 
+            font-size: 2.2rem; 
             font-weight: 700;
             color: var(--heading-color);
             margin: 0 0 0.6rem 0;
@@ -276,6 +275,7 @@
             <ul class="nav-links">
                 <li><a href="#introduction">📌 Introduction</a></li>
                 <li><a href="#van-conversion">🚐 Van Conversion</a></li>
+                <li><a href="#ins-aerien">✈️ Association INS'Aérien</a></li>
                 <li><a href="#code-project-1">⚙️ Code Projet n°1 (C++)</a></li>
                 <li><a href="#code-project-2">🔌 Code Project n°2 (ROS2)</a></li>
                 <li><a href="#ia-project-1">🧠 IA Project n°1 (ML)</a></li>
@@ -322,6 +322,16 @@
                 <li><strong>Conception :</strong> Plans en 3D et optimisation fine de l'espace.</li>
                 <li><strong>Énergie :</strong> Gestion du système électrique autonome (batteries lithium, panneaux solaires).</li>
                 <li><strong>Structure :</strong> Choix des matériaux légers et isolation thermique multicouche.</li>
+            </ul>
+        </section>
+
+        <section id="ins-aerien">
+            <h2>✈️ Fondateur de l'association INS'Aérien</h2>
+            <p>[Décrivez ici votre expérience marquante en tant que membre fondateur ou président. C'est un excellent moyen de mettre en avant votre leadership, votre esprit d'initiative, la gestion de budget, et la coordination de projets complexes autour de l'aéronautique ou du modélisme].</p>
+            <ul>
+                <li><strong>Gestion associative :</strong> Recrutement, management d'équipe et direction des pôles techniques.</li>
+                <li><strong>Partenariats :</strong> Recherche de financements et relations avec les instances de l'école.</li>
+                <li><strong>Ingénierie :</strong> Organisation d'ateliers techniques et de projets de conception de systèmes volants.</li>
             </ul>
         </section>
 
