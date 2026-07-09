@@ -135,11 +135,11 @@
 
         /* ZONE DE CONTENU PRINCIPALE */
         .content {
-            margin-left: 280px;
-            padding: 4rem 4.5rem;
-            max-width: 800px;
-            width: 100%;
-            box-sizing: border-box;
+        margin-left: 280px; /* Aligné pile sur la largeur de la sidebar */
+        padding: 3rem 2.5rem 3rem 2.5rem; /* Équilibre parfait : 2.5rem à gauche au lieu de 4.5rem */
+        max-width: 800px;
+        width: calc(100% - 280px); /* Force le contenu à occuper le reste exact de l'écran */
+        box-sizing: border-box;
         }
 
         /* Tags discrets style Chirpy */
