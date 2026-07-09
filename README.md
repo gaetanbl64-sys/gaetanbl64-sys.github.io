@@ -225,7 +225,37 @@
         </section>
 
         <section id="objectifs">
-            <h2>🎯 Objectifs du projet</h2>
+            <h2>🎯 Van conversion: bref summary of my personality</h2>
+            <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
+            <ul>
+                <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
+                <li>Calibration de la caméra embarquée pour redresser la distorsion de l'image.</li>
+                <li>Détection des lignes blanches et jaunes pour le maintien dans la voie (<em>Lane Following</em>).</li>
+            </ul>
+        </section>
+
+        <section id="objectifs">
+            <h2>🎯 IA project n°2: simulation and guidance of robot by RL</h2>
+            <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
+            <ul>
+                <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
+                <li>Calibration de la caméra embarquée pour redresser la distorsion de l'image.</li>
+                <li>Détection des lignes blanches et jaunes pour le maintien dans la voie (<em>Lane Following</em>).</li>
+            </ul>
+        </section>
+
+        <section id="objectifs">
+            <h2>🎯 Code projet n°1: robotics' club in C++</h2>
+            <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
+            <ul>
+                <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
+                <li>Calibration de la caméra embarquée pour redresser la distorsion de l'image.</li>
+                <li>Détection des lignes blanches et jaunes pour le maintien dans la voie (<em>Lane Following</em>).</li>
+            </ul>
+        </section>
+
+        <section id="objectifs">
+            <h2>🎯 Code project n°2: robot control with ROS2</h2>
             <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
             <ul>
                 <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
@@ -235,7 +265,7 @@
         </section>
 
         <section id="code">
-            <h2>💻 Code & Algorithme</h2>
+            <h2>💻 IA project n°1: deployment of a supervised learning of food</h2>
             <p>Pour faire bouger le robot en fonction des lignes détectées, j'ai écrit un script Python qui publie des commandes de vitesse (vitesse linéaire et vitesse angulaire) sur le protocole ROS.</p>
             <p>Voici un exemple de la structure du code utilisé :</p>
             
@@ -254,7 +284,7 @@ piloter_duckiebot(0.3, -0.1)
         </section>
 
         <section id="conclusion">
-            <h2>🏁 Conclusion</h2>
+            <h2>🏁 My study: 3 internships</h2>
             <p>Ce projet m'a permis de comprendre les bases de la robotique mobile autonome et la gestion des flux de capteurs en temps réel. Les prochaines étapes consisteront à intégrer les réseaux de neurones pour la détection des panneaux de signalisation ("Duckietown AprilTags").</p>
         </section>
     </div>
