@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Projet DuckieTown - Portfolio</title>
+    <title>Gaëtan Baylou-Lanot - Portfolio de Projets</title>
     <style>
         /* Design épuré inspiré du thème Chirpy de Samuel Neumann */
         :root {
@@ -28,7 +28,7 @@
 
         /* Barre latérale gauche */
         .sidebar {
-            width: 280px;
+            width: 300px;
             background-color: var(--sidebar-bg);
             border-right: 1px solid var(--border-color);
             height: 100vh;
@@ -37,13 +37,14 @@
             left: 0;
             display: flex;
             flex-direction: column;
-            padding: 2.5rem 1.5rem;
+            padding: 2.5rem 1.2rem;
             box-sizing: border-box;
+            overflow-y: auto; /* Permet de scroller dans le menu si la liste est longue */
         }
 
         .profile {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .profile-pic {
@@ -59,9 +60,10 @@
         }
 
         .profile h1 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin: 0;
             color: #1a1a1a;
+            line-height: 1.3;
         }
 
         .profile p {
@@ -77,16 +79,16 @@
         }
 
         .nav-links li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
         }
 
         .nav-links a {
             text-decoration: none;
             color: var(--sidebar-text);
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             display: block;
-            padding: 0.6rem 0.8rem;
+            padding: 0.5rem 0.7rem;
             border-radius: 6px;
             transition: all 0.2s;
         }
@@ -98,9 +100,9 @@
 
         /* Zone de contenu principale */
         .content {
-            margin-left: 280px;
+            margin-left: 300px;
             padding: 3.5rem;
-            max-width: 800px;
+            max-width: 850px;
             width: 100%;
             box-sizing: border-box;
         }
@@ -121,7 +123,7 @@
         }
 
         h1 { 
-            font-size: 2.4rem; 
+            font-size: 2.2rem; 
             color: #1a1a1a;
             margin: 0 0 0.5rem 0;
             line-height: 1.2;
@@ -136,9 +138,9 @@
         }
 
         h2 { 
-            font-size: 1.6rem; 
+            font-size: 1.5rem; 
             color: #1a1a1a;
-            margin-top: 2.5rem; 
+            margin-top: 3rem; 
             border-bottom: 1px solid #f1f3f5;
             padding-bottom: 0.3rem;
         }
@@ -156,23 +158,24 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Blocs de code comme Samuel */
+        /* Blocs de code */
         pre {
             background-color: var(--code-bg);
             padding: 1.2rem;
             border-radius: 8px;
             overflow-x: auto;
             border: 1px solid var(--border-color);
+            margin: 1.5rem 0;
         }
 
         code {
             font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
             font-size: 0.9rem;
-            color: #d63384; /* Couleur pour le code en ligne */
+            color: #d63384;
         }
 
         pre code {
-            color: #212529; /* Couleur pour les blocs de code */
+            color: #212529;
         }
 
         blockquote {
@@ -193,99 +196,124 @@
 </head>
 <body>
 
+    <!-- BARRE LATÉRALE (SIDEBAR) -->
     <div class="sidebar">
         <div class="profile">
-            <div class="profile-pic">🤖</div>
-            <h1>Votre Nom</h1>
+            <div class="profile-pic">🚀</div>
+            <h1>Gaëtan Baylou-Lanot</h1>
             <p>Mon Portfolio de Projets</p>
         </div>
         <ul class="nav-links">
             <li><a href="#introduction">📌 Introduction</a></li>
-            <li><a href="#objectifs">🎯 Objectifs du projet</a></li>
-            <li><a href="#code">💻 Code & Algorithme</a></li>
-            <li><a href="#conclusion">🏁 Conclusion</a></li>
+            <li><a href="#van-conversion">🚐 Van Conversion</a></li>
+            <li><a href="#ia-project-2">🤖 IA Project n°2 (RL)</a></li>
+            <li><a href="#code-project-1">⚙️ Code Projet n°1 (C++)</a></li>
+            <li><a href="#code-project-2">🔌 Code Project n°2 (ROS2)</a></li>
+            <li><a href="#ia-project-1">🧠 IA Project n°1 (ML)</a></li>
+            <li><a href="#conclusion">🎓 My Study: 3 Internships</a></li>
         </ul>
     </div>
 
+    <!-- CONTENU PRINCIPAL -->
     <div class="content">
         <div class="tag-container">
             <span class="tag">robotics</span>
-            <span class="tag">duckietown</span>
+            <span class="tag">ai</span>
+            <span class="tag">embedded</span>
+            <span class="tag">engineering</span>
         </div>
         
-        <h1>Robotics/DuckieTown - Getting Started with DuckieBots</h1>
-        <div class="meta">Publié en 2026 • Par Votre Nom</div>
+        <h1>Détail de mes projets personnels & académiques</h1>
+        <div class="meta">Mis à jour en 2026 • Par Gaëtan Baylou-Lanot</div>
 
+        <!-- Section Introduction -->
         <section id="introduction">
-            <h2>Introduction</h2>
-            <p>Bienvenue sur la page de présentation de mon projet. Dans le cadre de mes travaux personnels en robotique, j'ai eu l'opportunité de travailler sur l'écosystème <strong>DuckieTown</strong>, une plateforme open-source fantastique pour apprendre l'autonomie des robots.</p>
+            <h2>📌 Introduction</h2>
+            <p>Bienvenue sur mon espace personnel de documentation. Ce site regroupe les différents projets sur lesquels j'ai travaillé, touchant à la fois à l'intelligence artificielle, au développement système, à la robotique et à des réalisations concrètes de conception.</p>
             <blockquote>
-                <strong>Note :</strong> Ce projet met en pratique l'utilisation de Docker, de ROS (Robot Operating System) et du traitement d'images basique sous Python.
+                <strong>Note aux recruteurs :</strong> Cette page me permet de détailler les aspects techniques et méthodologiques qui ne tiennent pas sur mon format de CV classique.
             </blockquote>
         </section>
 
-        <section id="objectifs">
-            <h2>🎯 Van conversion: bref summary of my personality</h2>
-            <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
+        <!-- Section 1 : Van Conversion -->
+        <section id="van-conversion">
+            <h2>🚐 Van conversion: bref summary of my personality</h2>
+            <p>[Décrivez ici brièvement votre projet d'aménagement de van. C'est une excellente façon de montrer votre autonomie, vos compétences en gestion de projet, en résolution de problèmes et en ingénierie concrète/bricolage].</p>
             <ul>
-                <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
-                <li>Calibration de la caméra embarquée pour redresser la distorsion de l'image.</li>
-                <li>Détection des lignes blanches et jaunes pour le maintien dans la voie (<em>Lane Following</em>).</li>
+                <li>Conception des plans en 3D et optimisation de l'espace.</li>
+                <li>Gestion du système électrique autonome (batteries, panneaux solaires).</li>
+                <li>Choix des matériaux et isolation thermique.</li>
             </ul>
         </section>
 
-        <section id="objectifs">
-            <h2>🎯 IA project n°2: simulation and guidance of robot by RL</h2>
-            <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
+        <!-- Section 2 : IA Project n°2 -->
+        <section id="ia-project-2">
+            <h2>🤖 IA project n°2: simulation and guidance of robot by RL</h2>
+            <p>[Expliquez ici votre projet d'apprentissage par renforcement (Reinforcement Learning - RL) appliqué au guidage d'un robot en simulation].</p>
             <ul>
-                <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
-                <li>Calibration de la caméra embarquée pour redresser la distorsion de l'image.</li>
-                <li>Détection des lignes blanches et jaunes pour le maintien dans la voie (<em>Lane Following</em>).</li>
+                <li>Définition de l'environnement de simulation (ex: OpenAI Gym, Webots, ou Gazebo).</li>
+                <li>Modélisation de la fonction de récompense (reward function) pour l'évitement d'obstacles.</li>
+                <li>Algorithmes testés : PPO, DQN ou DDPG.</li>
             </ul>
         </section>
 
-        <section id="objectifs">
-            <h2>🎯 Code projet n°1: robotics' club in C++</h2>
-            <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
+        <!-- Section 3 : Code Projet n°1 -->
+        <section id="code-project-1">
+            <h2>⚙️ Code projet n°1: robotics' club in C++</h2>
+            <p>[Détaillez ici votre contribution au club de robotique, notamment la partie développement bas niveau / système en C++].</p>
             <ul>
-                <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
-                <li>Calibration de la caméra embarquée pour redresser la distorsion de l'image.</li>
-                <li>Détection des lignes blanches et jaunes pour le maintien dans la voie (<em>Lane Following</em>).</li>
+                <li>Développement orienté objet en C++ pour la gestion des actuateurs et capteurs.</li>
+                <li>Optimisation du code pour des architectures embarquées à ressources limitées.</li>
+                <li>Travail collaboratif en équipe via Git et méthodologie Agile.</li>
             </ul>
         </section>
 
-        <section id="objectifs">
-            <h2>🎯 Code project n°2: robot control with ROS2</h2>
-            <p>L'objectif principal était de configurer un <strong>DuckieBot</strong> pour qu'il puisse naviguer de manière autonome dans une mini-ville en respectant la signalisation au sol.</p>
+        <!-- Section 4 : Code Project n°2 -->
+        <section id="code-project-2">
+            <h2>🔌 Code project n°2: robot control with ROS2</h2>
+            <p>[Présentez ici vos compétences sur ROS2 (Robot Operating System), l'outil standard de l'industrie robotique].</p>
             <ul>
-                <li>Mise en place de l'environnement de développement et connexion SSH au robot.</li>
-                <li>Calibration de la caméra embarquée pour redresser la distorsion de l'image.</li>
-                <li>Détection des lignes blanches et jaunes pour le maintien dans la voie (<em>Lane Following</em>).</li>
+                <li>Création de nœuds (Nodes) ROS2 personnalisés en Python ou C++.</li>
+                <li>Gestion des communications via les Topics, Services et Actions.</li>
+                <li>Intégration et manipulation de données de capteurs (LiDAR, Caméra Odométrie).</li>
             </ul>
         </section>
 
-        <section id="code">
-            <h2>💻 IA project n°1: deployment of a supervised learning of food</h2>
-            <p>Pour faire bouger le robot en fonction des lignes détectées, j'ai écrit un script Python qui publie des commandes de vitesse (vitesse linéaire et vitesse angulaire) sur le protocole ROS.</p>
-            <p>Voici un exemple de la structure du code utilisé :</p>
+        <!-- Section 5 : IA Project n°1 -->
+        <section id="ia-project-1">
+            <h2>🧠 IA project n°1: deployment of a supervised learning of food</h2>
+            <p>[Présentez votre projet d'apprentissage supervisé dédié à la reconnaissance ou classification de nourriture].</p>
+            <p>Voici un aperçu de l'architecture ou du pipeline de traitement utilisé pour ce modèle :</p>
             
-<pre><code>import time
+<pre><code>import tensorflow as tf
+from tensorflow.keras import layers, models
 
-def piloter_duckiebot(vitesse_ligne, angle_virage):
-    """ Envoie les commandes moteurs au Duckiebot """
-    print(f"Moteur engagé -> Vitesse: {vitesse_ligne}, Angle: {angle_virage}")
-    # Votre logique de communication ROS irait ici
-    time.sleep(1)
+def create_food_model(input_shape, num_classes):
+    """ Création d'un réseau de neurones convolutif (CNN) pour la classification """
+    model = models.Sequential([
+        layers.Conv2D(32, (3, 3), activation='relu', input_shape=input_shape),
+        layers.MaxPooling2D((2, 2)),
+        layers.Conv2D(64, (3, 3), activation='relu'),
+        layers.MaxPooling2D((2, 2)),
+        layers.Flatten(),
+        layers.Dense(64, activation='relu'),
+        layers.Dense(num_classes, activation='softmax')
+    ])
+    return model
 
-# Simuler un déplacement en ligne droite puis un léger virage
-piloter_duckiebot(0.4, 0.0)
-piloter_duckiebot(0.3, -0.1)
+print("Structure de l'algorithme d'apprentissage supervisé initialisée.")
 </code></pre>
         </section>
 
+        <!-- Section 6 : Conclusion / Stages -->
         <section id="conclusion">
-            <h2>🏁 My study: 3 internships</h2>
-            <p>Ce projet m'a permis de comprendre les bases de la robotique mobile autonome et la gestion des flux de capteurs en temps réel. Les prochaines étapes consisteront à intégrer les réseaux de neurones pour la détection des panneaux de signalisation ("Duckietown AprilTags").</p>
+            <h2>🎓 My study: 3 internships</h2>
+            <p>[Utilisez cette conclusion pour lier vos projets personnels avec vos expériences professionnelles de stage et votre parcours d'études].</p>
+            <ul>
+                <li><strong>Stage n°1 :</strong> [Intitulé du poste / Entreprise] — Focus sur [Techno clé].</li>
+                <li><strong>Stage n°2 :</strong> [Intitulé du poste / Entreprise] — Focus sur [Techno clé].</li>
+                <li><strong>Stage n°3 :</strong> [Intitulé du poste / Entreprise] — Focus sur [Techno clé].</li>
+            </ul>
         </section>
     </div>
 
